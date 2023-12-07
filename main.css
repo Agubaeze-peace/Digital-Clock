@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(istockphoto-1431090023-612x612.jpg);
+    overflow: hidden;
+
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4PX;
+    font-size: 14PX;
+    text-align: center;
+    color: black;
+    background: linear-gradient(gray,white);
+    margin: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    text-shadow: 10px;
+}
+
+.clock{
+    display: flex;
+}
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: green;
+    border-radius: 8px;
+    opacity: .8;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0 0.3);
+}
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: lightgreen;
+   opacity: 0.8;
+}
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+ @media screen and (max-width: 600px) {
+        .clock {
+         width: 100%;
+          overflow: hidden;
+        }
+    }
+            
+       
